@@ -1,0 +1,36 @@
+
+
+body {
+  font-family: Arial, sans-serif; /* Fuente para el texto */
+  background-color: #808383; /* Color de fondo */
+  color: #333; /* Color del texto */
+  padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+p {
+  font-size: 18px; /* Tamaño del texto */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  margin-bottom: 20px; /* Espacio debajo de los párrafos */
+  text-align: justify;
+}
+
+/* Contenedor padre */
+.contenedor-imagenes {
+  display: flex; /* Alinea uno al lado del otro */
+  gap: 10px; /* Espacio entre imágenes */
+  justify-content: flex-start; /* Empuja las imágenes hacia la izquierda */
+}
+
+/* Estilo para cada imagen */
+.contenedor-imagenes img {
+  width: 200px; /* Tamaño fijo */
+  height: 200px;
+  object-fit: cover; /* Recorta la imagen para llenar el espacio sin estirarla */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.fondop {
+  width: 600px; /* Ancho  */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-top: 20px; /* Espacio arriba del fondo de pantalla */
+}
