@@ -17,14 +17,15 @@ p {
 /* Contenedor padre */
 .contenedor-imagenes {
   display: flex; /* Alinea uno al lado del otro */
-  gap: 10px; /* Espacio entre imágenes */
+  gap: 5px; /* Espacio entre imágenes */
   justify-content: flex-start; /* Empuja las imágenes hacia la izquierda */
 }
 
 /* Estilo para cada imagen */
 .contenedor-imagenes img {
-  width: 200px; /* Tamaño fijo */
-  height: 200px;
+  width: 180px; /* Tamaño fijo */
+  height: 300px;
+  padding: 10px; /* Espacio alrededor de cada imagen */
   object-fit: cover; /* Recorta la imagen para llenar el espacio sin estirarla */
   border-radius: 8px; /* Opcional: bordes redondeados */
 }
