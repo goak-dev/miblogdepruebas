@@ -2,8 +2,8 @@
 
 body {
   font-family: Arial, sans-serif; /* Fuente para el texto */
-  background-color: #808383; /* Color de fondo */
-  color: #333; /* Color del texto */
+  background-color: #031c1c; /* Color de fondo */
+  color: #e3e3e3; /* Color del texto */
   padding: 20px; /* Espaciado alrededor del contenido */
 }
 
@@ -12,8 +12,15 @@ p {
   line-height: 1.6; /* Altura de línea para mejor legibilidad */
   margin-bottom: 20px; /* Espacio debajo de los párrafos */
   text-align: justify;
+  height: 100px; /* Altura fija para el párrafo */
+  overflow: auto; /* Agrega una barra de desplazamiento si el contenido excede la altura */
 }
 
+h1 {
+  color: #bd0029; /* Color del título */
+  text-align: center; /* Centra el título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
 /* Contenedor padre */
 .contenedor-imagenes {
   display: flex; /* Alinea uno al lado del otro */
@@ -26,12 +33,25 @@ p {
   width: 180px; /* Tamaño fijo */
   height: 300px;
   padding: 10px; /* Espacio alrededor de cada imagen */
-  object-fit: cover; /* Recorta la imagen para llenar el espacio sin estirarla */
+  
   border-radius: 8px; /* Opcional: bordes redondeados */
+  flex : 1 1 auto; /* Permite que las imágenes se ajusten al espacio disponible */
 }
 
 .fondop {
   width: 600px; /* Ancho  */
   height: auto; /* Altura automática para mantener la proporción */
   margin-top: 20px; /* Espacio arriba del fondo de pantalla */
+}
+
+button {
+  display: block; /* Hace que el botón ocupe toda la línea */
+  margin: 20px auto; /* Centra el botón horizontalmente y agrega espacio arriba y abajo */
+  padding: 10px 20px; /* Espaciado dentro del botón */
+  font-size: 30px; /* Tamaño del texto del botón */
+  background-color: #00bd19; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
